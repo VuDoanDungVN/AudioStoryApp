@@ -25,7 +25,7 @@ const HomeScreen = () => {
     },
   ];
   return (
-    <View style={{ backgroundColor: "#fff", flex: 1 }}>
+    <View style={{ backgroundColor: "#fff", flex: 1, paddingTop: 40, paddingHorizontal:10, paddingVertical: 20 }}>
       <View
         style={{
           display: "flex",
@@ -44,7 +44,7 @@ const HomeScreen = () => {
           />
         </View>
         <View style={{ flex: 1, alignItems: "center" }}>
-          <Text style={{ fontSize: 15, fontWeight: "bold", color: "#57ab91" }}>
+          <Text style={{ fontSize: 20, fontWeight: 300, color: "#57ab91" }}>
             Tất cả
           </Text>
         </View>
@@ -66,7 +66,7 @@ const HomeScreen = () => {
             backgroundColor: "#fff",
           }}
         >
-          <View style={{ flexDirection: "row", width: "100%", padding: 3 }}>
+          <View style={{ flexDirection: "row", width: "100%", padding: 2, gap: 5 }}>
             {buttons.map((button, index) => {
               return (
                 <Pressable
@@ -74,7 +74,7 @@ const HomeScreen = () => {
                   onPress={() => setSelectedTab(index)}
                   style={{
                     flex: 1,
-                    padding: 10,
+                    padding: 20,
                     borderRadius: 5,
                     borderColor: selectedTab === index ? "#57ab91" : "white",
                     borderWidth: selectedTab === index ? 0.5 : 0,
@@ -86,7 +86,9 @@ const HomeScreen = () => {
                     style={{
                       color: "#57ab91",
                       textAlign: "center",
-                      fontWeight: 300,
+                      fontWeight: 600,
+                      fontSize: 15,
+
                     }}
                   >
                     {button.title}
@@ -108,18 +110,18 @@ const HomeScreen = () => {
           }}
         >
           <TouchableOpacity>
-            <View>
+            <View style={{borderWidth: 1, borderColor: "#57ab91", borderRadius:15}}>
               <Image
                 source={require("../../../assets/images/post/1.jpg")}
-                style={{ width: 180, height: 250, borderRadius: 15 }}
+                style={{ width: 190, height: 250, borderRadius: 15 }}
               />
             </View>
           </TouchableOpacity>
           <TouchableOpacity>
-            <View>
+            <View style={{borderWidth: 1, borderColor: "#57ab91", borderRadius:15}}>
               <Image
                 source={require("../../../assets/images/post/2.jpg")}
-                style={{ width: 180, height: 250, borderRadius: 15 }}
+                style={{ width: 190, height: 250, borderRadius: 15 }}
               />
             </View>
           </TouchableOpacity>
@@ -134,18 +136,18 @@ const HomeScreen = () => {
           }}
         >
           <TouchableOpacity>
-            <View>
+            <View style={{borderWidth: 1, borderColor: "#57ab91", borderRadius:15}}>
               <Image
                 source={require("../../../assets/images/post/3.jpg")}
-                style={{ width: 180, height: 250, borderRadius: 15 }}
+                style={{ width: 190, height: 250, borderRadius: 15 }}
               />
             </View>
           </TouchableOpacity>
           <TouchableOpacity>
-            <View>
+            <View style={{borderWidth: 1, borderColor: "#57ab91", borderRadius:15}}>
               <Image
                 source={require("../../../assets/images/post/4.jpg")}
-                style={{ width: 180, height: 250, borderRadius: 15 }}
+                style={{ width: 190, height: 250, borderRadius: 15 }}
               />
             </View>
           </TouchableOpacity>
@@ -160,10 +162,10 @@ const HomeScreen = () => {
           }}
         >
           <TouchableOpacity>
-            <View>
+            <View style={{borderWidth: 1, borderColor: "#57ab91", borderRadius:15}}>
               <Image
                 source={require("../../../assets/images/post/5.jpg")}
-                style={{ width: 180, height: 250, borderRadius: 15 }}
+                style={{ width: 190, height: 250, borderRadius: 15 }}
               />
             </View>
           </TouchableOpacity>
@@ -171,7 +173,7 @@ const HomeScreen = () => {
             <View>
               <Image
                 source={require("../../../assets/images/post/6.jpg")}
-                style={{ width: 180, height: 250, borderRadius: 15 }}
+                style={{ width: 190, height: 250, borderRadius: 15 }}
               />
             </View>
           </TouchableOpacity>
